@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Wongnok</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Itim" rel="stylesheet">
+        <link rel="stylesheet" href="css/default.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Kirang+Haerang" rel="stylesheet">  
+</head>
+
+<style>
+    body {
+        background-image: url("img/bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+</style>
+<nav class="navbar navbar-expand-sm|md|lg|-xlnavbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html"><img src="img/wongnok.png" class="img-circle" alt="Cinque Terre" width="35" height="35">&nbsp;&nbsp;&nbsp;Wongnok  </a>
+    <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home
+                    <span class="sr-only">(current)</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="search.html">Search</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+                    <a class="nav-link" href="Contact.html">Contact</a>
+                </li>
+    </div>
+</nav>
+<br>
+    <div class="container">
+        <div class="text-center">
+            <img src="img/wongnok.png" class="img-circle" alt="Cinque Terre" width="320" height="320">
+        </div>
+<div class="serch"><img src="img/seacrh.png"></div><br>
+<form> <div class="jumbotron"> 
+    <div class="form-group">
+        <label for=""><i class="Large material-icons text-danger">search</i> Search</label>
+        <input type="text" name="keyword" id="keyword" class="form-control" placeholder="Keyword ex. Cafe, Seafood" aria-describedby="helpId">
+    </div>
+    <div class="form-group">
+        <label for=""><i class="Large material-icons text-danger">photo_library</i> Category</label>
+        <select class="form-control" name="type" id="type">
+            <option value="resturant">Resturant</option>
+            <option value="doctor">Doctor</option>
+            <option value="beauty_salon">Beauty Salon</option>
+            <option value="gas_station">Gas Station</option>
+            <option value="atm">ATM</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for=""><i class="Large material-icons text-danger">directions_car</i> Distance</label>
+        <select class="form-control" name="radius" id="radius">
+            <option value="500">500 m</option>
+            <option value="1000">1 km</option>
+            <option value="5000">5 km</option>
+        </select>
+    </div>
+    <a name="" id="search" class="btn btn-primary" href="#" role="button"><h3>Search</h3></a>
+    <p></p>
+    <h3><i class="Large material-icons text-danger">find_in_page</i> Results :</h3>
+  
+        <div id="searchresult"></div>
+    </div>
+</form>
+</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.4/fetch.min.js"></script>
+    <script src="js/placesearch.js"></script>
+    <script src="js/search.js"></script>
+</body>
+
+</html>
